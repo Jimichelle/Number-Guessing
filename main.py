@@ -10,4 +10,12 @@ random_number = random.randint(int(lower_number),int(upper_number))
 number_guess = int(input("How much guessing you need ? : "))
 print("You choose %d guessing\n" % number_guess)
 count = 0
-print("The Game is starting")
+print("The Game is starting \n")
+while count <= number_guess:
+    guess = int(input("Your Guess : "))
+    if guess == random_number:
+        print("You WON")
+        break
+    else:
+        count +=1
+        print("Try Again")
